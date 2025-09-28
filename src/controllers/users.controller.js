@@ -23,7 +23,7 @@ export async function createUser(req, res) {
       from: `"Soporte ITCA" <${process.env.EMAIL_USER}>`,
       to: savedUser.email,
       subject: "Gracias por comunicarte con nosotros",
-      text: `Hola, ${savedUser.nombre}\n\nGracias por comunicarte con nosotros, te contactaremos por este medio en los próximos días.`
+      text: `Hola, ${savedUser.nombre}\n\nGracias por comunicarte con nosotros, te contactaremos por este medio en las proximas horas.`
     };
 
     const info = await transporter.sendMail(mailOptions);
